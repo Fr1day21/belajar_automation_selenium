@@ -10,6 +10,7 @@ public class PracticeFromPage extends FormsPage{
     private final By sportHobbyCheckbox = By.id("hobbies-checkbox-1");
     private final By readingHobbyCheckbox = By.id("hobbies-checkbox-2");
     private final By musicHobbyCheckbox = By.id("hobbies-checkbox-3");
+    private final By submitButton = By.id("submit");
 
     public void clickFemaleRadiButton (){
         scrollToElementJS(femaleRadioButton);
@@ -48,10 +49,13 @@ public class PracticeFromPage extends FormsPage{
         }
     }
 
-
-
     public boolean isReadingSelected(){
         return find(readingHobbyCheckbox).isSelected();
+    }
+
+    public void clickSubmitButton(){
+//        scrollToElementJS(submitButton);
+        click(submitButton);
     }
 
 
