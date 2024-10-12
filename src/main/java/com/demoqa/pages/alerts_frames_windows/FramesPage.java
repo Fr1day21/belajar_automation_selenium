@@ -7,7 +7,7 @@ import static utilities.SwitchToUtility.*;
 public class FramesPage extends Alert_Frames_WindowsPage{
 
     private final By textInframe = By.id("sampleHeading");
-    private String iFrameBigBox = "frame1";
+    private final String iFrameBigBox = "frame1";
     private final By headerFramesText = By.xpath("//h1[text()='Frames']");
 
     private void switchToBigBox(){
