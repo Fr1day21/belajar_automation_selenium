@@ -25,6 +25,14 @@ public class SwitchToUtility extends Utility{
         switchTo().alert().sendKeys(text);
     }
 
+    public static void switchToFramesString(String value){
+        switchTo().frame(value);
+    }
+
+    public static void switchToDefaultContent(){
+        switchTo().defaultContent();
+    }
+
 
 
 
