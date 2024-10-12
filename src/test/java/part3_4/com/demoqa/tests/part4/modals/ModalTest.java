@@ -9,7 +9,7 @@ public class ModalTest extends BaseTest {
     @Test
     public void testModalDialog(){
 
-        var afwPage = homePage.goToAlertsWindowsCard();
+        var afwPage = homePage.goToAlertsFramesWindowsCard();
         var modalDialogPage = afwPage.clickModalDialogs();
         modalDialogPage.clickSmallModalButton();
         String actualText = modalDialogPage.getSmallModalText();

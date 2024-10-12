@@ -12,14 +12,14 @@ public class AlertsTest extends BaseTest {
 
     public void testInformationAlert(){
         String expectedAlertText = "You clicked a button";
-        var alertsPage = homePage.goToAlertsWindowsCard().clickAlerts();
+        var alertsPage = homePage.goToAlertsFramesWindowsCard().clickAlerts();
         alertsPage.clickInformationAlertButton();
         Assert.assertEquals(getAlertText(), expectedAlertText,"\n Actual & Expected Messages Do Not Match\n");
         acceptAlert();
     }
 
     public void testConfirmationAlert(){
-        var alertsPage = homePage.goToAlertsWindowsCard().clickAlerts();
+        var alertsPage = homePage.goToAlertsFramesWindowsCard().clickAlerts();
         alertsPage.clickConfirmationAlertButton();
         dismissAlert();
         String expectConfirmationResult = "You selected Cancel";
@@ -32,7 +32,7 @@ public class AlertsTest extends BaseTest {
         String alertText = "Selenium With Java";
         String expectedResult = "You entered " + alertText;
 
-        var alertsPage = homePage.goToAlertsWindowsCard().clickAlerts();
+        var alertsPage = homePage.goToAlertsFramesWindowsCard().clickAlerts();
         alertsPage.clickPromptAlertButton();
         setAlertText(alertText);
         acceptAlert();
