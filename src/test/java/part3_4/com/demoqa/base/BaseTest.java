@@ -38,7 +38,9 @@ public class BaseTest {
         basePage.setDriver(driver);
         setUtilityDriver();
         homePage = new HomePage();
+        delay(2000);
     }
+
 
     @AfterMethod
     public void takeFailedResultScreenshot(ITestResult testResult){
