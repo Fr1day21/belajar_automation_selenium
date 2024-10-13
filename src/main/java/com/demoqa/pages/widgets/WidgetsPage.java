@@ -9,6 +9,7 @@ public class WidgetsPage extends HomePage {
 
     private final By selectMenuItem = By.xpath("//span[text()='Select Menu']");
     private final By datePickerMenuItem = By.xpath("//span[text()='Date Picker']");
+    private final By progressBarMenuItem = By.xpath("//span[text()='Progress Bar']");
 
     public SelectMenuPage clickSelectMenu(){
         scrollToElementJS(selectMenuItem);
@@ -20,6 +21,12 @@ public class WidgetsPage extends HomePage {
         scrollToElementJS(datePickerMenuItem);
         click(datePickerMenuItem);
         return new DatePickerMenuPage();
+    }
+
+    public ProgressBarPage clickProgressBar(){
+        scrollToElementJS(progressBarMenuItem);
+        click(progressBarMenuItem);
+        return new ProgressBarPage();
     }
 
 
