@@ -13,6 +13,10 @@ public class ActionsUtility extends Utility{
         actions().dragAndDropBy(source, x, y).perform();
     }
 
+    public static void sendKeys(WebElement source, CharSequence keys){
+        actions().sendKeys(source, keys).perform();
+    }
+
 
 
 
